@@ -2,12 +2,12 @@
 
                 implicit none
 
-                integer :: imax=100 !cell number
+                integer, parameter :: imax=100 !cell number , index number for array must be parameter
         
-                double precision :: c=1.0 ! velosity
-                double precision :: nu=0.50 ! CFL number
-                double precision :: l=1.0 ! length 
+                real :: c=1.0 ! velosity
+                real :: nu=0.50 ! CFL number
+                real :: l=1.0 ! length 
 
-                double precision, dimension(0:imax) :: u
+                real, dimension(0:imax) :: u
 
         end program main
